@@ -1,0 +1,261 @@
+body {
+    background-color: gray;
+    box-sizing: border-box;
+}
+
+.autohor-img {
+    border-radius: 50%;
+    width: 50px;
+    margin: 5px 0 5px 10px;
+}
+.window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #075e54;
+    padding: 0 10px;
+}
+.window {
+    height: 100vh;
+}
+.window-body {
+    height: 600px;
+    background-color: rgb(177, 175, 173);
+    position: relative;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+.window-body::-webkit-scrollbar {
+    display: none;
+}
+.window-footer {
+    /* position: absolute; */
+    background-color: rgb(177, 175, 173);
+    /* bottom:10px; */
+    width: 100%;
+    padding: 0 5px 10px 5px;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input {
+    border-radius: 50px;
+    width: 100%;
+    padding: 20px 100px 20px 50px;
+    border: none;
+    outline: none;
+}
+.input-wrapper i {
+    color: rgb(177, 175, 173);
+    font-size: 30px;
+    position: relative;
+}
+.input-wrapper {
+    position: relative;
+}
+.smile {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.camera {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.camera > i {
+    margin-left: 10px;
+}
+.send > i {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #075e54;
+    position: relative;
+    right: 10px;
+}
+.user-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.user-name > span {
+    color: white;
+}
+.data {
+    margin-left: 10px;
+    color: gray;
+    text-align: right;
+    display: block;
+    /* position: absolute; */
+    right: 10px;
+}
+ul {
+    margin: 0px;
+    padding: 0;
+}
+#leftBody {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    word-wrap: break-word;
+}
+.activeLeft {
+    align-items: flex-end;
+    background-color: white;
+    padding: 5px;
+    margin: 5px 45px 5px 10px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    /* width: max-content; */
+}
+.activeLeft::after {
+    content: "";
+    right: 100%;
+    width: 0;
+    height: 0;
+    left: -7px;
+    top: 0%;
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 10px 5px 0;
+    border-color: transparent white transparent transparent;
+}
+#leftBody > .div {
+    align-items: flex-end;
+    background-color: white;
+    padding: 5px;
+    margin: 5px 10px 5px 45px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    /* width: max-content; */
+    align-self: flex-end;
+    position: relative;
+}
+
+#leftBody > .div::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -7px;
+    top: 0%;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* ================================ */
+
+#rightBody {
+    display: inline-flex;
+    flex-flow: column;
+    word-wrap: break-word;
+
+    width: 100%;
+}
+.activeRight {
+    align-items: flex-end;
+
+    background-color: white;
+    padding: 5px;
+    margin: 5px 45px 5px 10px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    /* width: max-content; */
+}
+.activeRight::after {
+    content: "";
+    right: 100%;
+    width: 0;
+    height: 0;
+    left: -7px;
+    top: 0%;
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 10px 5px 0;
+    border-color: transparent white transparent transparent;
+}
+#rightBody > .div {
+    align-items: flex-end;
+
+    background-color: white;
+    padding: 5px;
+    margin: 5px 10px 5px 45px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    /* width: max-content; */
+    align-self: flex-end;
+    position: relative;
+}
+#rightBody > .div::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -7px;
+    top: 0%;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+li {
+    list-style: none;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+.left-header h5 {
+    color: white;
+    margin-bottom: 0;
+}
+.right-header i {
+    margin-right: 10px;
+}
+i {
+    font-size: 24px;
+    color: white;
+}
+
+#smileBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+   opacity: 0;
+   display: flex;
+    transition: 0.2s;
+}
+#smileBox>li{
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+.iconTransform{
+    /* transform: translateY(-60px);
+    transition: 0.5s; */
+    
+}
+.active{
+    opacity: 1 !important;
+    transition: 0.2s;
+}
